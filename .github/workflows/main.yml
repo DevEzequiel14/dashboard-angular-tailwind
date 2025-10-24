@@ -23,7 +23,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       # Setup nodeJS
       - name: Setup nodejs
@@ -40,7 +41,7 @@ jobs:
         run: npm run build:prod
 
       # Ensure SPA fallback works on GitHub Pages by copying index.html to 404.html
-      - name: Provide SQP fallback for Pages
+      - name: Provide SAP fallback for Pages
         run: |
           cp -f dist/dashboard-angular-tailwind/browser/index.csr.html dist/dashboard-angular-tailwind/browser/404.html
 
