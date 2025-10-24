@@ -1,0 +1,1 @@
+import{Ia as s,Ja as n,Pa as o,ya as a}from"./chunk-R5ACZFKN.js";var l=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=a({type:t,selectors:[["app-tables"]],decls:2,vars:0,template:function(e,p){e&1&&(s(0,"p"),o(1,"tables works!"),n())},encapsulation:2})};export{l as Tables};
