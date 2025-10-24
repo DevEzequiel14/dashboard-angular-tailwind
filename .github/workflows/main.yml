@@ -42,12 +42,12 @@ jobs:
       # Ensure SPA fallback works on GitHub Pages by copying index.html to 404.html
       - name: Provide SQP fallback for Pages
         run: |
-          cp -f dist/
+          cp -f dist/dashboard-angular-tailwind/browser/index.csr.html dist/dashboard-angular-tailwind/browser/404.html
 
       # Deploy to GitHub pages
       - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v4.2.0
-        with: 
-          bluid_dir: dist/
+        with:
+          build_dir: dist/dashboard-angular-tailwind/browser
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
