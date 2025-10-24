@@ -43,7 +43,7 @@ jobs:
       # Ensure SPA fallback works on GitHub Pages by copying index.html to 404.html
       - name: Provide SAP fallback for Pages
         run: |
-          cp -f dist/dashboard-angular-tailwind/browser/index.csr.html dist/dashboard-angular-tailwind/browser/404.html
+          cp -f dist/dashboard-angular-tailwind/browser/index.html dist/dashboard-angular-tailwind/browser/404.html
 
       # Deploy to GitHub pages
       - name: Deploy to Pages
